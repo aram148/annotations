@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by sbmlutils version 0.3.7a1 on 2019-09-01 14:06 with libSBML version 5.18.1. -->
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2" xmlns:comp="http://www.sbml.org/sbml/level3/version1/comp/version1" level="3" version="1" fbc:required="false" comp:required="true">
+  <model metaid="meta_brenda_parameters_1" id="brenda_parameters_1" name="brenda_parameters_1" substanceUnits="mmole" timeUnits="s" volumeUnits="litre" areaUnits="m2" lengthUnits="m" extentUnits="mmole" fbc:strict="false">
+    <notes>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <h1>BRENDA kinetic parameters</h1>
+        <h2>Description</h2>
+        <p>This file contains the parsed and annotated kinetic parameters of the
+    <a href="https://www.brenda-enzymes.org">BRENDA enzyme database</a>.
+    </p>
+        <p>
+          <b>BRENDA in 2019: a European ELIXIR core data resource</b>
+          <br/>
+    Jeske L., Placzek S., Schomburg I., Chang A., Schomburg D., Nucleic Acids Res., in print (2019)
+    </p>
+          <p>
+    The information was processed using 
+    <a href="https://github.com/matthiaskoenig/brendapy">brendapy</a>
+    (<a href="https://doi.org/10.5281/zenodo.3355000">https://doi.org/10.5281/zenodo.3355000</a>).<br/>
+    The SBML was created using
+    <a href="https://github.com/matthiaskoenig/sbmlutils">sbmlutils</a>
+    (<a href="https://doi.org/10.5281/zenodo.597149">https://doi.org/10.5281/zenodo.597149</a>).
+    </p>
+          <div class="dc:provenance">The content of this model has been carefully created in a manual research effort.</div>
+          <div class="dc:publisher">This file has been created by
+    <a href="https://livermetabolism.com" title="Matthias Koenig" target="_blank">Matthias Koenig</a>.</div>
+          <h2>Terms of use</h2>
+          <div class="dc:rightsHolder">Copyright © 2019 Matthias Koenig.</div>
+          <div class="dc:license">
+            <p>Redistribution and use of any part of this model, with or without modification, are permitted provided
+        that the following conditions are met:
+        <ol>
+              <li>Redistributions of this SBML file must retain the above copyright notice, this list of conditions and
+          the following disclaimer.</li>
+              <li>Redistributions in a different form must reproduce the above copyright notice, this list of conditions
+          and the following disclaimer in the documentation and/or other materials provided
+          with the distribution.</li>
+            </ol>
+        This model is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the
+        implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+        </p>
+          </div>
+        </body>
+      </notes>
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#meta_brenda_parameters_1">
+          <dcterms:creator>
+            <rdf:Bag>
+              <rdf:li rdf:parseType="Resource">
+                <vCard:N rdf:parseType="Resource">
+                  <vCard:Family>Koenig</vCard:Family>
+                  <vCard:Given>Matthias</vCard:Given>
+                </vCard:N>
+                <vCard:EMAIL>koenigmx@hu-berlin.de</vCard:EMAIL>
+                <vCard:ORG rdf:parseType="Resource">
+                  <vCard:Orgname>Humboldt-University Berlin, Institute for Theoretical Biology</vCard:Orgname>
+                </vCard:ORG>
+              </rdf:li>
+            </rdf:Bag>
+          </dcterms:creator>
+          <dcterms:created rdf:parseType="Resource">
+            <dcterms:W3CDTF>2019-09-01T14:06:33Z</dcterms:W3CDTF>
+          </dcterms:created>
+          <dcterms:modified rdf:parseType="Resource">
+            <dcterms:W3CDTF>2019-09-01T14:06:33Z</dcterms:W3CDTF>
+          </dcterms:modified>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+    <listOfUnitDefinitions>
+      <unitDefinition id="s">
+        <listOfUnits>
+          <unit kind="second" exponent="1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="mmole">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="-3" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="m">
+        <listOfUnits>
+          <unit kind="metre" exponent="1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="m2">
+        <listOfUnits>
+          <unit kind="metre" exponent="2" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="mM">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="-3" multiplier="1"/>
+          <unit kind="litre" exponent="-1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="per_s">
+        <listOfUnits>
+          <unit kind="second" exponent="-1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="per_mM_s">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="-3" multiplier="-1"/>
+          <unit kind="litre" exponent="1" scale="0" multiplier="1"/>
+          <unit kind="second" exponent="-1" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+      <unitDefinition id="mumol_per_min_mg">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="-6" multiplier="1"/>
+          <unit kind="gram" exponent="-1" scale="-3" multiplier="1"/>
+          <unit kind="second" exponent="-1" scale="0" multiplier="60"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfParameters>
+      <parameter metaid="meta_PB000001" sboTerm="SBO:0000027" id="PB000001" name="KM EC1_1_1_1__PR4 Drosophila melanogaster (NAD+)" value="0.26" units="mM" constant="true">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_PB000001">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/brenda/1.1.1.1"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/1.1.1.1"/>
+                  <rdf:li rdf:resource="https://identifiers.org/taxonomy/7227"/>
+                  <rdf:li rdf:resource="https://identifiers.org/sbo/SBO:0000027"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:15846"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed/6796069"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </parameter>
+      <parameter metaid="meta_PB000002" sboTerm="SBO:0000027" id="PB000002" name="KM EC1_1_1_1__PR4 Drosophila melanogaster (butan-2-ol)" value="0.86" units="mM" constant="true">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_PB000002">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/brenda/1.1.1.1"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/1.1.1.1"/>
+                  <rdf:li rdf:resource="https://identifiers.org/taxonomy/7227"/>
+                  <rdf:li rdf:resource="https://identifiers.org/sbo/SBO:0000027"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:35687"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed/6796069"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </parameter>
+      <parameter metaid="meta_PB000003" sboTerm="SBO:0000027" id="PB000003" name="KM EC1_1_1_1__PR4 Drosophila melanogaster (propan-2-ol)" value="1.87" units="mM" constant="true">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_PB000003">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/brenda/1.1.1.1"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/1.1.1.1"/>
+                  <rdf:li rdf:resource="https://identifiers.org/taxonomy/7227"/>
+                  <rdf:li rdf:resource="https://identifiers.org/sbo/SBO:0000027"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:17824"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed/6796069"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </parameter>
+      <parameter metaid="meta_PB000004" sboTerm="SBO:0000027" id="PB000004" name="KM EC1_1_1_1__PR4 Drosophila melanogaster (butan-1-ol)" value="3.31" units="mM" constant="true">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_PB000004">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/brenda/1.1.1.1"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/1.1.1.1"/>
+                  <rdf:li rdf:resource="https://identifiers.org/taxonomy/7227"/>
+                  <rdf:li rdf:resource="https://identifiers.org/sbo/SBO:0000027"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:28885"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed/6796069"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </parameter>
+      <parameter metaid="meta_PB000005" sboTerm="SBO:0000027" id="PB000005" name="KM EC1_1_1_1__PR4 Drosophila melanogaster (propan-2-ol)" value="3.42" units="mM" constant="true">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_PB000005">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/brenda/1.1.1.1"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/1.1.1.1"/>
+                  <rdf:li rdf:resource="https://identifiers.org/taxonomy/7227"/>
+                  <rdf:li rdf:resource="https://identifiers.org/sbo/SBO:0000027"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:17824"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed/6796069"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </parameter>
+      <parameter metaid="meta_PB000006" sboTerm="SBO:0000027" id="PB000006" name="KM EC1_1_1_1__PR4 Drosophila melanogaster (ethanol)" value="8.92" units="mM" constant="true">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_PB000006">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/brenda/1.1.1.1"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/1.1.1.1"/>
+                  <rdf:li rdf:resource="https://identifiers.org/taxonomy/7227"/>
+                  <rdf:li rdf:resource="https://identifiers.org/sbo/SBO:0000027"/>
+                  <rdf:li rdf:resource="https://identifiers.org/chebi/CHEBI:16236"/>
+                </rdf:Bag>
+              </bqbiol:is>
+              <bqbiol:isDescribedBy>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/pubmed/6796069"/>
+                </rdf:Bag>
+              </bqbiol:isDescribedBy>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </parameter>
+      <parameter metaid="meta_PB000007" sboTerm="SBO:0000558" id="PB000007" name="SA EC1_1_1_1__PR4 Drosophila melanogaster)" value="55" units="mumol_per_min_mg" constant="true">
+        <annotation>
+          <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:vCard4="http://www.w3.org/2006/vcard/ns#" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/" xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+            <rdf:Description rdf:about="#meta_PB000007">
+              <bqbiol:is>
+                <rdf:Bag>
+                  <rdf:li rdf:resource="https://identifiers.org/brenda/1.1.1.1"/>
+                  <rdf:li rdf:resource="https://identifiers.org/ec-code/1.1.1.1"/>
+                  <rdf:li rdf:resource="https://identifiers.org/taxonomy/7227"/>
+                  <rdf:li rdf:resource="https://identifiers.org/sbo/SBO:0000558"/>
+                </rdf:Bag>
+              </bqbiol:is>
+            </rdf:Description>
+          </rdf:RDF>
+        </annotation>
+      </parameter>
+    </listOfParameters>
+  </model>
+</sbml>
